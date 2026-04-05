@@ -1,0 +1,29 @@
+{
+  "name": "gaia-prime",
+  "projectType": "application",
+  "root": "apps/gaia-prime",
+  "sourceRoot": "apps/gaia-prime/app",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m pytest tests/ -v",
+        "cwd": "apps/gaia-prime"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m ruff check app/ tests/ || true",
+        "cwd": "apps/gaia-prime"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload",
+        "cwd": "apps/gaia-prime"
+      }
+    }
+  }
+}

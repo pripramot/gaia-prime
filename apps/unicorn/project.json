@@ -1,0 +1,22 @@
+{
+  "name": "unicorn",
+  "projectType": "application",
+  "root": "apps/unicorn",
+  "sourceRoot": "apps/unicorn/app",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m pytest tests/ -v",
+        "cwd": "apps/unicorn"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8003 --reload",
+        "cwd": "apps/unicorn"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "gaia-prime",
+  "version": "1.0.0",
+  "description": "GAIA PRIME Master Orchestrator — Ring-Forge Nx Monorepo",
+  "private": true,
+  "scripts": {
+    "nx": "nx",
+    "build": "nx run-many --target=build",
+    "test": "nx run-many --target=test",
+    "lint": "nx run-many --target=lint"
+  },
+  "devDependencies": {
+    "nx": "^22.6.4"
+  }
+}

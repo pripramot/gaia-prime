@@ -1,0 +1,22 @@
+{
+  "name": "phuphadang",
+  "projectType": "application",
+  "root": "apps/phuphadang",
+  "sourceRoot": "apps/phuphadang/app",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m pytest tests/ -v",
+        "cwd": "apps/phuphadang"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8001 --reload",
+        "cwd": "apps/phuphadang"
+      }
+    }
+  }
+}
