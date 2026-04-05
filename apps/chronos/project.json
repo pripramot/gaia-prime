@@ -1,0 +1,22 @@
+{
+  "name": "chronos",
+  "projectType": "application",
+  "root": "apps/chronos",
+  "sourceRoot": "apps/chronos/app",
+  "targets": {
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m pytest tests/ -v",
+        "cwd": "apps/chronos"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "python3 -m uvicorn app.main:app --host 127.0.0.1 --port 8002 --reload",
+        "cwd": "apps/chronos"
+      }
+    }
+  }
+}
