@@ -1,0 +1,8 @@
+{
+  "name": "gtsalpha-wallet",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/gtsalpha-wallet/src",
+  "projectType": "application",
+  "tags": ["scope:app", "type:web3"],
+  "targets": {}
+}

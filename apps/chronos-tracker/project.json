@@ -1,0 +1,8 @@
+{
+  "name": "chronos-tracker",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/chronos-tracker/src",
+  "projectType": "application",
+  "tags": ["scope:app", "type:geo-intelligence"],
+  "targets": {}
+}

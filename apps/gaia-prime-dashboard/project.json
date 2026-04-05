@@ -1,0 +1,8 @@
+{
+  "name": "gaia-prime-dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/gaia-prime-dashboard/src",
+  "projectType": "application",
+  "tags": ["scope:app", "type:dashboard"],
+  "targets": {}
+}
